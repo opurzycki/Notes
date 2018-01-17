@@ -1,0 +1,170 @@
+TIP: HTML stands for Hypertext Markup Language
+
+	<h1> I'm a header! </h1>
+	<h2> I'm another header! </h2>
+	<h3 style="color:red"> I'm a coloured (red) header! And I got an inline style! </h3>
+
+	<p> I'm a paragraph! </p>
+
+	<!-- I'm a comment -->
+
+TIP: CSS stands for Cascading Style Sheets
+
+This is plain style element:
+
+	<style>
+	</style>
+
+Create some CSS selector!
+
+	<style>
+	  h2 {
+	    color: red;
+	  }
+	</style>
+
+Create some class inside your CSS style element!
+
+	<style>
+	  .red-text {
+	    color: blue;
+	  }
+	</style>
+
+And apply it to your header!
+
+	<h2 class="red-text"> This is a red header! </h2>
+
+TIP: Note that in your CSS style element, classes should start with a period. In your HTML elements' class 	     declarations, classes shouldn't start with a period.
+
+Let's change some font size!
+
+	h1 {
+	  font-size: 30px;
+	}
+
+TIP: You can add numbers to headers and paragraphs but you don't have to. If you want to change multiple ones with same style selector just name them equally.
+
+Let's change font family!
+
+	h1 {
+	  font-family: Sans-serif;
+	}
+
+TIP: You can include multiple attributes within one style selector e.g:
+
+	<style>
+	  p {
+	    font-size: 30px;
+	    font-family: Monospace;
+	  }
+	</style>
+
+Let's import Lobster font straight from Google!
+Just paste this link at top of your code and you can apply Lobster font in style selector!
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+TIP: You can degrade your fonts; that means if one font is unavaiable browser automatically switch to the next font.
+
+Let's see the code for degrading fonts!
+
+	h2 {
+    	  font-family: Lobster, Monospace;
+  	}
+
+It's time to add some images!
+Note that all images need an alt atribute. The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image fails to load.
+
+	<img src="https://www.your-image-source.com/your-image.jpg" alt="Author standing on a beach with two 	thumbs up. ">
+
+To resize image create a class within your style selector like this:
+	
+	<style>
+	  .smaller-image {
+	    width: 100px;
+	  }
+	</style>
+
+
+Let's create some borders around our photo! As always we will use the class, like this:
+
+	<style>
+	  .thin-red-border {
+	    border-color: red;
+	    border-width: 5px;
+	    border-style: solid;
+	  }
+	</style>
+
+TIP: To create round border use attribute eg. border-radius: 10px
+
+TIP: To create rounded border use border-radius: 50%
+
+TIP: You can apply multiple classes to an element by separating each class with a space within its class attribute. For example:
+	<img class="class1 class2 class3">
+
+
+Anchor elements (a elements) are used to link to content outside of the current page.
+Syntax for an exemplary element within the paragraph:
+
+	<p> Here's a
+	  <a href='https://github.com/opurzycki/'>
+	    link to my GitHub profile
+	  </a>
+	  for you to follow.</p>
+
+
+And plain syntax!
+	
+	<a href='link address'> hypertext </a>
+
+TIP: If you don't want add an a element but you don't know yet where it'll link you can always create a dead link.
+     Just replace value of href attribute with a # symbol. eg. 
+	
+	<a href="#"> dead link </a>
+
+Photo can also link to other pages!
+Just nest it inside of an a element like that (it's dead though):
+
+	<a href="#"><img src="your link goes here" alt="link description"></a>
+
+
+It's time to create some unordered or bullet point-style lists.
+Look at the code below:
+
+	<ul>
+	  <li>oatmeal</li>
+	  <li>bananas</li>
+	  <li>yoghurt</li>
+	</ul>
+
+And ordered lists:
+
+	<ol>
+	  <li>Michael Jordan</li>
+	  <li>Kobe Bryant</li>
+	  <li>LeBron James</li>
+	</ol>
+
+Let's create a web form!
+It's great way to get some input from user.
+
+	<input type="text">
+
+Note that input elements are self-closing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
