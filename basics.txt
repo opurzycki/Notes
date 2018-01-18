@@ -23,6 +23,8 @@ Create some CSS selector!
 	  }
 	</style>
 
+TIP: You can describe colors using HEX values eg. #000000 for black
+
 Create some class inside your CSS style element!
 
 	<style>
@@ -35,7 +37,7 @@ And apply it to your header!
 
 	<h2 class="red-text"> This is a red header! </h2>
 
-TIP: Note that in your CSS style element, classes should start with a period. In your HTML elements' class 	     declarations, classes shouldn't start with a period.
+TIP: Note that in your CSS style element, classes should start with a period. In your HTML elements' class declarations, classes shouldn't start with a period.
 
 Let's change some font size!
 
@@ -154,7 +156,109 @@ It's great way to get some input from user.
 
 Note that input elements are self-closing.
 
+Placeholder text is what appears in text input before user has input anuthing.
+You can create placeholder like so:
 
+	<input type="text" placeholder="this is placeholder text">
+
+
+Want to create web form that submit data to a server? Nothing has been easier!
+
+	<form action="/url-where-you-want-to-submit-form-data></form>
+
+ 
+You could use some submit button don't you?
+
+	<button type="submit">this button submits the form</button>
+
+Well, you got your form with input text field and Submit button. But what if someone will submit empty field? Nah, we don't want it at all. So let's make our text input required!
+
+	<input type="text" required>
+
+It's time for some radio buttons! They are type of input and should be nested within it's own label element. All related radio buttons should have same name attribute. Let's take a look at an example below:
+
+	<label><input type="radio" name="indoor-outdoor> Indoor</label>
+	<label><input type="radio" name="indoor-outdoor> Outdoor</label>
+
+Another similiar form type is checkbox. Give it a try!
+
+	<label><input type="checkbox" name="personality"> Loving</label>
+
+Do you want your checkboxes/radios to be checked by default? Nothing easier! Just add checked attribute!
+
+	<label><input type="checkbox" name="personality" checked> Loving</label>
+
+
+Shh! It's the div element! It's like the mos commonly used HTML element of all. It's like container for other elements. For instance you can pass the CSS class declaration for all of elements in a single container. Just put some stuff inside that divs!
+
+	<div>
+	</div>
+
+For example to create silver background for a 2 ordered lists:
+
+	<style>
+	  .silver-background {
+	    background-color: silver;
+	  }
+	</style>
+
+	<div class="silver-background">
+	  <ol>
+	    <li>Bill Evans</li>
+	    <li>Chet Baker</li>
+	  </ol>
+	</div>
+
+
+You should give your elements an id attribute. It helps later with JS and you can style your elements using CSS based on them id!
+To reference in style element to an id always put a # symbol  in front of their names.
+
+	#your-element {
+	  background-color: green;
+	}
+
+	<form id="your element">
+	</form>
+
+
+	
+Let's see some more CSS style element's. 
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+Beside content element, the rest of them you can describe like that:
+
+	<style>
+	  .box {
+	    padding-top: 10px;
+	    padding-right: 20px;
+	    padding-bottom: 30px;
+	    padding-left: 40px;
+	  }
+	</style>
+
+Or the siple way (clockwise notation):
+
+	<style>
+	  .box {
+	    padding: 10px 20px 30px 40px;
+	  }
+	</style>
+
+Though we cannot see it, all elements are nested within body element. We can style our body element like any other element and all other elements will inherit our body element's styles.
+
+TIP: classes will override body element's CSS and id elements will override class declarations and in-line elements will override all the CSS declarations in style element
+
+TIP: when you have many styles, or CSS libraries and want to be sure which color or style will be used just use !important attribute. This attribute will override all other CSS
+
+	<style>
+	  .green-text {
+	    color: green !important;
+	  }
+	</style>
 
 
 
