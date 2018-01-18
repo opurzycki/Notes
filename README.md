@@ -1,3 +1,6 @@
 # Notes
 
-Just some random notes from my front-end journey
+This repo contains all of my notes created on my front-end journey through following courses:
+
+> freecodecamp.org
+
